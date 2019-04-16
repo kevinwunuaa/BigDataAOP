@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dic alias="域名">
+	<item key="bsrhin" text="区域平台中心"/>
+	<item key="dqm" text="数据质量监管系统"/>
+	<item key="hcms" text="综合管理系统"/>
+	<item key="dr" text="双向转诊系统"/>
+	<item key="ehrview" text="EHRView浏览器"/>
+	<item key="rkk" text="人口信息系统"/>
+	<item key="platform" text="平台服务系统"/>
+	<item key="configuration" text="基础数据平台"/>
+	<item key="adapter" text="前置机管理系统"/>
+	<item key="cardmanager" text="卡管系统"/>
+	<item key="qmys" text="全面预算管理系统"/>
+	<item key="res" text="电子病历资源库系统"/>
+	<item key="bdf" text="大数据转换平台"/>
+	<item key="uaams" text="统一认证授权管理系统"/>
+	<item key="dmtOfETL" text="基于ETL的数据迁移工具"/>
+</dic>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<validator-list> 
+  <validator> 
+    <name>length</name>  
+    <text>长度校验器</text>  
+    <paramFormat>{low : [下限长度],high : [上限长度]}</paramFormat>  
+    <comments>用法：限制字段的长度，长度不能超过参数low和high定义的范围</comments> 
+  </validator>  
+  <validator> 
+    <name>dictionary</name>  
+    <text>字典校验器</text>  
+    <paramFormat>{dic : [字典目录名]}</paramFormat>  
+    <comments>用法：用于字典校验，字典存储在数据库中。</comments> 
+  </validator>  
+  <validator> 
+    <name>enumDic</name>  
+    <text>枚举字典校验器</text>  
+    <paramFormat>{items : [{code : [字典码],value : [字典值]},{...}]}</paramFormat>  
+    <comments>用法：用于可枚举的取值。</comments> 
+  </validator>  
+  <validator> 
+    <name>idcard</name>  
+    <text>身份证校验器</text>  
+    <paramFormat/>  
+    <comments>用法：可校验15位或18位的身份证。</comments> 
+  </validator>  
+  <validator> 
+    <name>regExpr</name>  
+    <text>正则表表达式校验器</text>  
+    <paramFormat>{regExpr : [正则表达式]}</paramFormat>  
+    <comments>用法：用于正则表达式校验。如手机号码的正则表达式为：^((13[0-9])|(14[5|7])|(15([0-3]|[5-9]))|(18[0,5-9]))\\d{8}$</comments> 
+  </validator>  
+  <validator> 
+    <name>range</name>  
+    <text>取值范围校验器</text>  
+    <paramFormat>{min : [最小值],max : [最大值]}</paramFormat>  
+    <comments>用法：限制取值在[min,max]区间</comments> 
+  </validator> 
+  <validator> 
+    <name>relevance</name>  
+    <text>关联性校验</text>  
+    <paramFormat>{targetTable : [表名],targetField : [字段名]}</paramFormat>  
+    <comments>用法：取值能通过目标表的相应字段查询</comments> 
+  </validator>
+</validator-list>

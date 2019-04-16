@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<job-list>
+	<job>
+		<id>c39183faa57c434c9a0ee64c9a4d82e8</id>
+		<name>test</name>
+		<jobClass>com.bsoft.dv.job.TestJob</jobClass>
+		<cronConfig>0 1/3 * * * ?</cronConfig>
+		<remark>test</remark>
+		<status>0</status>
+	</job>
+	<job>
+		<id>d7a876710d4a446c9f11b668085126c9</id>
+		<name>checkdata</name>
+		<jobClass>com.bsoft.dv.job.CheckDataJob</jobClass>
+		<cronConfig>0 1/5 * * * ?</cronConfig>
+		<remark>数据校验。</remark>
+		<status>0</status>
+	</job>
+	<job>
+		<id>be5841fd257f4bc6841fd2a8d9be45b7</id>
+		<name>uploaddata</name>
+		<jobClass>com.bsoft.dv.job.UploadDataJob</jobClass>
+		<cronConfig>0 1/3 * * * ?</cronConfig>
+		<remark>数据上传。</remark>
+		<status>0</status>
+	</job>
+	<job>
+		<id>0e19fd76d9f949c1a1b5cea6b3ee1aa6</id>
+		<name>da_pt_information</name>
+		<jobClass>com.bsoft.da.job.DataCopyJob</jobClass>
+		<cronConfig>0 1/5 * * * ?</cronConfig>
+		<jsonParam>{xmlFile:"qypt_pt_information.xml"}</jsonParam>
+		<remark>一医病人信息[pt_information]上传。</remark>
+		<status>0</status>
+	</job>
+	<job>
+		<id>b8e616ddfddd46e28829e758a9f0e91d</id>
+		<name>da_opt_register</name>
+		<jobClass>com.bsoft.da.job.DataCopyJob</jobClass>
+		<cronConfig>0 7/10 * * * ?</cronConfig>
+		<jsonParam>{xmlFile:"qypt_opt_register.xml"}</jsonParam>
+		<remark>一医挂号信息[opt_register]上传。</remark>
+		<status>0</status>
+	</job>
+	<job>
+		<id>4400eabbeb48414fb9ce157dc6977108</id>
+		<name>da_opt_record</name>
+		<jobClass>com.bsoft.da.job.DataCopyJob</jobClass>
+		<cronConfig>0 11/10 * * * ?</cronConfig>
+		<jsonParam>{xmlFile:"qypt_opt_record.xml"}</jsonParam>
+		<remark>一医门诊记录[opt_record]上传。</remark>
+		<status>0</status>
+	</job>
+	<job>
+		<id>4400eabbeb48444224157dc6977108</id>
+		<name>da_ipt_record</name>
+		<jobClass>com.bsoft.da.job.DataCopyJob</jobClass>
+		<cronConfig>0 13/10 * * * ?</cronConfig>
+		<jsonParam>{xmlFile:"qypt_ipt_record.xml"}</jsonParam>
+		<remark>一医住院就诊记录[ipt_record]上传。</remark>
+		<status>0</status>
+	</job>
+	<job>
+		<id>4400eabbeb4844422tytu57dc6977108</id>
+		<name>da_opt_recipe</name>
+		<jobClass>com.bsoft.da.job.DataCopyJob</jobClass>
+		<cronConfig>0 17/13 * * * ?</cronConfig>
+		<jsonParam>{xmlFile:"qypt_opt_recipe.xml"}</jsonParam>
+		<remark>一医门诊处方[opt_recipe]上传。</remark>
+		<status>0</status>
+	</job>
+	<job>
+		<id>4400eabbeb48ryiwq4442257dc6977108</id>
+		<name>da_opt_recipedetail</name>
+		<jobClass>com.bsoft.da.job.DataCopyJob</jobClass>
+		<cronConfig>0 19/13 * * * ?</cronConfig>
+		<jsonParam>{xmlFile:"qypt_opt_recipedetail.xml"}</jsonParam>
+		<remark>一医门诊处方明细[opt_recipedetail]上传。</remark>
+		<status>0</status>
+	</job>
+	<job>
+		<id>4400eawqetyb48ryiwq4442257dc608</id>
+		<name>da_opt_fee</name>
+		<jobClass>com.bsoft.da.job.DataCopyJob</jobClass>
+		<cronConfig>0 21/15 * * * ?</cronConfig>
+		<jsonParam>{xmlFile:"qypt_opt_fee.xml"}</jsonParam>
+		<remark>一医门诊收费[opt_fee]上传。</remark>
+		<status>0</status>
+	</job>
+	<job>
+		<id>4400eawqety48ryiwq4442257wre3556</id>
+		<name>da_ipt_advicedetail</name>
+		<jobClass>com.bsoft.da.job.DataCopyJob</jobClass>
+		<cronConfig>0 25/13 * * * ?</cronConfig>
+		<jsonParam>{xmlFile:"qypt_ipt_advicedetail.xml"}</jsonParam>
+		<remark>一医住院医嘱[ipt_advicedetail]上传。</remark>
+		<status>0</status>
+	</job>
+	<job>
+		<id>4400eawq45tww8ryiq44422512</id>
+		<name>da_ipt_medicalrecordpage</name>
+		<jobClass>com.bsoft.da.job.DataCopyJob</jobClass>
+		<cronConfig>0 27/7 * * * ?</cronConfig>
+		<jsonParam>{xmlFile:"qypt_ipt_medicalrecordpage.xml"}</jsonParam>
+		<remark>一医病案首页[ipt_medicalrecordpage]上传。</remark>
+		<status>0</status>
+	</job>
+	<job>
+		<id>4400eawq45ery113wer422512</id>
+		<name>da_ipt_leavediagnosis_new</name>
+		<jobClass>com.bsoft.da.job.DataCopyJob</jobClass>
+		<cronConfig>0 28/7 * * * ?</cronConfig>
+		<jsonParam>{xmlFile:"qypt_ipt_leavediagnosis_new.xml"}</jsonParam>
+		<remark>一医病案首页-诊断[ipt_leavediagnosis_new]上传。</remark>
+		<status>0</status>
+	</job>
+	<job>
+		<id>4400eety145699r42251wrr2</id>
+		<name>da_ipt_operation_new</name>
+		<jobClass>com.bsoft.da.job.DataCopyJob</jobClass>
+		<cronConfig>0 29/7 * * * ?</cronConfig>
+		<jsonParam>{xmlFile:"qypt_ipt_operation_new.xml"}</jsonParam>
+		<remark>一医病案首页-手术[ipt_operation_new]上传。</remark>
+		<status>0</status>
+	</job>
+	<job>
+		<id>trewy124634261wrr2eqt67</id>
+		<name>da_pt_labreport</name>
+		<jobClass>com.bsoft.da.job.DataCopyJob</jobClass>
+		<cronConfig>0 31/10 * * * ?</cronConfig>
+		<jsonParam>{xmlFile:"qypt_pt_labreport.xml"}</jsonParam>
+		<remark>一医检验报告[pt_labreport]上传。</remark>
+		<status>0</status>
+	</job>
+	<job>
+		<id>trewy12463426346572eqt67</id>
+		<name>da_pt_labdetail</name>
+		<jobClass>com.bsoft.da.job.DataCopyJob</jobClass>
+		<cronConfig>0 33/10 * * * ?</cronConfig>
+		<jsonParam>{xmlFile:"qypt_pt_labdetail.xml"}</jsonParam>
+		<remark>一医检验报告明细[pt_labdetail]上传。</remark>
+		<status>0</status>
+	</job>
+	<job>
+		<id>dsfreyerg3426346572eqt67</id>
+		<name>da_pt_examreport</name>
+		<jobClass>com.bsoft.da.job.DataCopyJob</jobClass>
+		<cronConfig>0 37/9 * * * ?</cronConfig>
+		<jsonParam>{xmlFile:"qypt_pt_examreport.xml"}</jsonParam>
+		<remark>一医检查报告[pt_examreport]上传。</remark>
+		<status>0</status>
+	</job>
+	<job>
+		<id>d9ea176a2d764b539cba1835b98f80ad</id>
+		<name>da_ipt_admissionnote</name>
+		<jobClass>com.bsoft.da.job.DataCopyJob</jobClass>
+		<cronConfig>0 1/5 * * * ?</cronConfig>
+		<jsonParam>{xmlFile:"qypt_ipt_admissionnote.xml"}</jsonParam>
+		<remark>一医入院记录[ipt_admissionnote]上传。</remark>
+		<status>0</status>
+	</job>
+</job-list>

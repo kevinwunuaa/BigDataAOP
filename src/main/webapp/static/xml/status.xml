@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dic alias="用户状态">
+	<item key="0" text="正常" />
+	<item key="1" text="停用" />
+	<item key="2" text="锁定" />
+</dic>
+
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd">
+	<!-- 注解支持 -->
+	<context:annotation-config />
+	<!-- 组件扫描com.test目录下的所有文件 -->
+	<context:component-scan base-package="com.bdaop" />
+	<context:component-scan base-package="com.bsoft" />
+	<import resource="spring-database.xml" />
+	<import resource="spring-mvc.xml" />
+	<import resource="spring-message.xml" />
+
+	<import resource="spring-context.xml" />
+	<import resource="classpath:com/bsoft/ws/spring-ws.xml" />
+
+</beans>

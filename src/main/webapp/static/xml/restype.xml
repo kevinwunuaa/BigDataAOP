@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dic alias="资源类型">
+	<item key="PLATFORM" text="平台中心" />
+	<item key="APP" text="应用程序" />
+	<item key="MENU" text="菜单资源" />
+</dic>

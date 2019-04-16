@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dic alias="资源级别">
+	<item key="0" text="0级"/>	
+	<item key="1" text="1级"/>
+	<item key="2" text="2级"/>
+	<item key="3" text="3级"/>
+	<item key="4" text="4级"/>
+</dic>
