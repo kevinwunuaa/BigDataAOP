@@ -2,7 +2,21 @@
 <div class="container gallery-container">
 	<h1>制度墙</h1>
 	<div class="tz-gallery">
-		<div class="row">
+		<div id="app" class="row">
+			<template v-for="photo in photos">
+				<div class="col-sm-6 col-md-4">
+					<div class="thumbnail">
+						<a class="lightbox" v-bind:href="photo.url"> <img
+							v-bind:src="photo.url" alt="Park">
+						</a>
+						<div class="caption">
+							<h3>{{photo.title}}</h3>
+							<p>{{photo.remark}}</p>
+						</div>
+					</div>
+				</div>
+			</template>
+			<!--
 			<div class="col-sm-6 col-md-4">
 				<div class="thumbnail">
 					<a class="lightbox" href="photo/park.jpg"> <img
@@ -82,7 +96,6 @@
 				</div>
 			</div>
 
-			<!-- more -->
 			<div class="col-sm-6 col-md-4">
 				<div class="thumbnail">
 					<a class="lightbox" href="photo/coast.jpg"> <img
@@ -109,7 +122,7 @@
 					</div>
 				</div>
 			</div>
-			<!--  
+			  
 				<div class="col-sm-6 col-md-4">
 					<div class="thumbnail">
 						<a class="lightbox" href="photo/traffic.jpg"> <img

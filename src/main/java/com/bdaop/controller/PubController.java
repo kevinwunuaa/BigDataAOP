@@ -48,6 +48,19 @@ public class PubController {
 		else{
 			model.addAttribute("swfPath", "upload/test.swf");
 		}
+		return "documentView";
+	}
+	
+	@RequestMapping("doc/docView.action")
+	public String myDocView(Model model, HttpServletRequest req,
+			HttpServletResponse res){
+		String swfPath = req.getParameter("swfPath");
+		if(!StringUtils.isEmpty(swfPath)){
+			model.addAttribute("swfPath", swfPath);
+		}
+		else{
+			model.addAttribute("swfPath", "upload/test.swf");
+		}
 		return "doc/documentView";
 	}
 	

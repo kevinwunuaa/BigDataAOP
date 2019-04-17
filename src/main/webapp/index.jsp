@@ -344,6 +344,10 @@
 	<script src="${pageContext.request.contextPath}/static/AdminLTE/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 	<!-- AdminLTE App -->
 	<script src="${pageContext.request.contextPath}/static/AdminLTE/dist/js/adminlte.min.js"></script>
+	
+	<!-- vue -->
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	
 	<!-- skin setting -->
 	<script
 		src="${pageContext.request.contextPath}/static/plugins/skin-settings.js"></script>
@@ -360,7 +364,12 @@
 		src="${pageContext.request.contextPath}/static/bootstrap-table/bootstrap-table.min.js"></script>
 	<script
 		src="${pageContext.request.contextPath}/static/bootstrap-table/bootstrap-table-zh-CN.min.js"></script>
-
+	<!-- 在线预览 -->
+	<script type="text/javascript"
+		src="${pageContext.request.contextPath}/static/plugins/flexpaper_flash.js"></script>
+	<script type="text/javascript"
+		src="${pageContext.request.contextPath}/static/plugins/flexpaper_flash_debug.js"></script>
+	
 	<!-- global js -->
     <script src="${pageContext.request.contextPath}/static/js/global.js"></script>	
     <!-- index js -->
